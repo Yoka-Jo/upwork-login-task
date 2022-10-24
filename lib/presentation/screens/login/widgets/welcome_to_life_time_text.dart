@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+import '../../../resources/colors_manager.dart';
+import '../../../resources/strings_manager.dart';
+import '../../../resources/text/styles_manager.dart';
+
+class WelcomeToLifeTimeText extends StatelessWidget {
+  const WelcomeToLifeTimeText({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      AppStrings.welcomeToLifeTime,
+      style: getSemiBoldStyle(
+          color: AppColors.lightBlack,
+          fontSize: 16.0,
+          family: FontFamilies.inter),
+    );
+  }
+}
